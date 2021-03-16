@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tic Tac Toe</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  </head>  
+  <body>
+    <div class = "heading">
+      <h1>
+        Tic Tac Toe!
+      </h1>
+      <p>
+        Play Tic Tac Toe against an unbeatable computer!
+      </p>
+    </div>
+       
+    <div class="game-grid"> 
+      <div class="flex-container">
+        <button onclick="makeMove(0)" class="game-cell top-row" id="cell-0"></button>
+        <div class="center-col">
+          <button onclick="makeMove(1)" class="game-cell top-row" id="cell-1"></button>
+        </div>   
+        <button onclick="makeMove(2)" class="game-cell top-row" id="cell-2"></button> 
+      </div>
+    
+      <div class="flex-container">
+        <button onclick="makeMove(3)" class="game-cell center-row" id="cell-3"></button>
+        <div class="center-col ">
+          <button onclick="makeMove(4)" class="game-cell center-row" id="cell-4"></button>
+        </div>
+        <button onclick="makeMove(5)" class="game-cell center-row" id="cell-5"></button>
+      </div>
+    
+      <div class="flex-container">
+        <button onclick="makeMove(6)" class="game-cell " id="cell-6"></button>
+        <div class="center-col">
+          <button onclick="makeMove(7)" class="game-cell" id="cell-7"></button>
+        </div>
+        <button onclick="makeMove(8)" class="game-cell" id="cell-8"></button>
+      </div>
+    </div>   
+         
+    <p id="instructions">
+      Welcome to Tic Tac Toe! Click on a space to play!
+    </p>
+    
+    <div class="flex-container">
+      <button id="reset-button" onclick="reset()" hidden="true"></button>
+    </div>
+    
+      
+    
+  </body>
+</html>

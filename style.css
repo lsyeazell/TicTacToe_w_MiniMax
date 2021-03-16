@@ -1,0 +1,74 @@
+/* CSS files add styling rules to your content */
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+  font-family: 'Indie Flower', cursive;
+  margin: 2em;
+}
+
+h1{
+  font-size: 2em;
+
+}
+
+p{
+  font-family: 'Indie Flower', cursive;
+  font-size:1.1em;
+}
+
+.heading, #instructions{
+  text-align: center;
+}
+
+.game-cell{
+  width: 110px;
+  height: 110px;
+  background-color: white;
+  border: 0px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+}
+
+.game-cell:disabled{
+  color: black;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.center-col{
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+}
+
+.center-row{
+  border-bottom: 5px solid black;
+}
+
+.top-row{
+  border-bottom: 5px solid black;
+}
+
+#reset-button{
+  background-color: #FDB600;
+  border: 0;
+  padding:5px 10px 5px 10px;
+  font-family: "Indie Flower", cursive;
+  font-size:1.2rem;
+  border-radius: 4px;
+  margin-top:0px;
+  box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.24), 1px 3px 3px 1px rgba(0,0,0,0.19);
+}
+
+#reset-button:hover{
+  box-shadow: 0px 0px;
+  margin-top:3px;
+}
+
+.game-grid{
+  margin: 50px;
+}
